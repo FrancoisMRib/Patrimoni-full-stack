@@ -1,0 +1,58 @@
+:root {
+    --footerPadding: 15%;
+}
+
+#footer {
+    font-family: Gill Sans MT;
+    font-weight: 400;
+    color: white;
+}
+
+#footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#footerContactInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #C17373;
+    font-size: 11px;
+    height: 25px;
+    padding-left: var(--footerPadding);
+    padding-right: var(--footerPadding);
+}
+
+#footerOptions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    font-size: 9px;
+    height: 70px;
+    padding-left: var(--footerPadding);
+    padding-right: var(--footerPadding);
+}
+
+.footerPipe {
+    border-left: 1.5px solid white;
+    height: 29px;
+}
+
+#footerCopyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    font-size: 6px;
+    height: 12px;
+}
+
+.espace{
+    margin-top: 15px;
+}
+
+.espacede{
+    margin-top:30px;
+}

@@ -1,0 +1,9 @@
+.roseground{
+    position: absolute;
+    z-index: 1;
+}
+
+.buttonground{
+    position: absolute;
+    z-index: 2;
+}

@@ -1,0 +1,45 @@
+.return{
+    background-color: #E0E0E0;
+    color: #ffffff;
+}
+
+.selecteur{
+    background-color: #9C352F;
+    color: #FFFFFF;
+    padding: 5px;
+    margin: 10px;
+}
+
+.ensemble {
+    display: flex;
+    flex: row;
+}
+
+.bandeau {
+    background-color: #C17373;
+    color: #ffffff;
+}
+
+#HeaderBack{
+    background-color: #EDC3C3;
+    height: 39px;
+    padding-right: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#HeaderLogo img {
+    height: 100%;
+}
+
+.selecteur{
+    position : absolute;
+    z-index: 1;
+}
+
+.fondufond{
+    position : absolute;
+    z-index: 0;
+}

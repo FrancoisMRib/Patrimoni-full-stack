@@ -1,0 +1,24 @@
+.return{
+    background-color: #E0E0E0;
+    color: #f2f2f2;
+}
+
+.band0{
+    background-color: #F2F2F2;
+    text-align: center;
+    color: #9C352F;
+    padding: 5px;
+    width: 100%;
+}
+
+.response{
+    align-items: center;
+    background-color: #EDC3C3;
+    margin: 10px;
+    padding: 10px;
+    color: #F2F2F2;
+}
+
+.validateur {
+    margin-bottom: 10px;
+}

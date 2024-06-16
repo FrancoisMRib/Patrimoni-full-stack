@@ -1,0 +1,56 @@
+.fondecran{
+    width: 100%;
+}
+
+.buttongen {
+    background-color: brown;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.fondderriere {
+    position: relative;
+    display: flex;
+    flex: row;
+    z-index: 0;
+}
+
+.select{
+    position: absolute;
+    display: flex;
+    flex: row;
+    z-index: 1;
+    margin-left: 30%;
+    margin-top: 30%;
+}
+
+#HeaderLogo {
+    background-color: #C17373;
+    height: 39px;
+    padding-right: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bandito {
+    background-color: #F2F2F2;
+    text-align: center;
+    color: #9C352F;
+    width: 100%;
+    margin: 0%;
+    padding: 5px;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.footerspeci {
+    position: absolute;
+    z-index: 0;
+}
