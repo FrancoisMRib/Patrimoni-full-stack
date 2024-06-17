@@ -8,6 +8,8 @@ import axios from 'axios';
 
 export function Register() {
 
+    console.log("toto");
+
     const [values, setValues] = useState({
         name_user: '',
         email: '',
@@ -18,10 +20,10 @@ export function Register() {
     const handleSubmit = (event) => {
         console.log(values);
         event.preventDefault();
-        axios.post('http://localhost:8081/registration', values)
+        axios.post('http://localhost:5173/registration', values)
         // .then(res => console.log(res))
-        .then(res => console.log(res))
-        .then(err => console.log(err));
+        .then(res => console.log('Registration successful:', response.data))
+        .then(err => console.log('Registration error:', error));
     }
 
     return (
@@ -29,40 +31,42 @@ export function Register() {
         
         >
             <Header/>
-            <div className="d-flex justify-content-center align-items-center bg-primary vh-100">
             <div 
-            className="bg-white p-3 rounded w-25"
+            // className="d-flex justify-content-center align-items-center bg-primary vh-100"
+            >
+            <div 
+            // className="bg-white p-3 rounded w-25"
             >
                 <h2>Sign Up </h2>
                 <form onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="name_user"><strong>Nom </strong></label>
-                        <input type="text" placeholder="Entrer votre nom" name="name_user"
+                        <input type="text" placeholder="Entrez votre nom" name="name_user"
                         onChange={e => setValues({...values, name_user : e.target.value})} 
-                        className="form-control rounded-0"
+                        // className="form-control rounded-0"
                         />
                     </div>
                     <div>
                         <label htmlFor="email"><strong>Mail </strong></label>
-                        <input type="email" placeholder="Entrer votre email" name="email"
+                        <input type="email" placeholder="Entrez votre email" name="email"
                         onChange={e => setValues({...values, email : e.target.value})} 
-                        className="form-control rounded-0"
+                        // className="form-control rounded-0"
                         />
                     </div>
                     <div>
                         <label htmlFor="password_user"><strong>Mot de passe </strong></label>
-                        <input type="password" placeholder="Entrer votre mot de passe" name="password_user"
+                        <input type="password" placeholder="Entrez votre mot de passe" name="password_user"
                         onChange={e => setValues({...values, password_user : e.target.value})} 
-                        className="form-control rounded-0"
+                        // className="form-control rounded-0"
                         />
                     </div>
                     <br></br>
                     <button type="submit" 
-                    className="btn btn-success w-100 rounded-0"
+                    // className="btn btn-success w-100 rounded-0"
                     >S'enregistrer</button>
                     <p>Vous êtes en accord avec nos termes et nos politiques</p>
                     <Link to={`/login`} 
-                    className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none"
+                    // className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none"
                     >J'ai déjà un compte</Link>
                 </form>
             </div>

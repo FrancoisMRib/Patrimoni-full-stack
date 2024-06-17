@@ -54,6 +54,6 @@ const salt = 10;
     
 })
 
- app.listen(8081,()=> {
+ app.listen(5173,()=> {
     console.log("Running. ..");
  })
