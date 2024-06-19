@@ -19,11 +19,21 @@ import { Options } from "./pages/Options";
 import { PistGame } from "./pages/PistGame";
 import { Quiz } from "./pages/Quiz";
 //import {Carousel} from './pages/Carrousel'; // Importez le composant Carousel
+import LoginPage from "./LoginPage.jsx";
+import MainPage from "./MainPage.jsx";
 
 const router = createBrowserRouter([
   {
     path:"/",
     element: <Accueil/>
+  },
+  {
+    path:"/loginpage",
+    element: <LoginPage/>
+  },
+  {
+    path:"/main",
+    element: <MainPage/>
   },
   {
     path:"/itineraire",

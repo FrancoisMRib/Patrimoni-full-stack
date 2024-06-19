@@ -55,7 +55,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 35px;
+    height: 42px;
     position: absolute;
     top: 88px;
     width: 100%;
@@ -92,3 +92,8 @@
 .ptitLogo {
     height: 100%;
 }
+
+/* .debuting{
+    position: relative;
+    width: 100%;
+} */

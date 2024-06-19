@@ -10,11 +10,11 @@ export function Connexion() {
             <Header/>
             <Return/>
             
-            <div className="bandito">
+            <div className="banditoro">
                 <p>Bienvenue sur l'espace de connexion !</p>
             </div>
 
-            <div className="select">
+            <div className="selectator">
                 
                 <button>
                     <Link to={`/registration`}>Créer ici pour créer un compte</Link>
@@ -24,7 +24,7 @@ export function Connexion() {
                 </button>
             </div>
 
-            <div className="fondderriere">
+            <div className="fonduderriere">
                 <img src="src/img/background.svg" alt="" className="fondecran"/>
             </div>
 

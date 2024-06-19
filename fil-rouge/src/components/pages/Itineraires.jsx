@@ -8,7 +8,12 @@ export function Itineraires() {
     return (
         <div>
             <Header/>
-            <Return/>
+            {/* <Return/> */}
+
+            <div id="HeaderLogo">
+                <img src="src/img/Logo_Patrimoni-removebg-preview 2.png" alt='HeaderLogo' />
+            </div>
+
             {/* <div id="HeaderBack">
                 <img src="src/img/Logo_Patrimoni-removebg-preview 2.png" className='ptitLogo' />
             </div>
@@ -29,7 +34,7 @@ export function Itineraires() {
                      et les itinéraires universitaires, enfin, ceux souhaitant se renseigner solidement sur un sujet.</h4>
             </div>
 
-            <div>
+            <div className="riquita">
 
                 <p className="bandeau">Itinéraires famille</p>
                 <div className="ensemble">
@@ -52,8 +57,8 @@ export function Itineraires() {
             </div>
             </div>
 
-            <div className="fondufond">
-            <img src="src/img/background.svg" alt="" />
+            <div className="fondufondi">
+                <img src="src/img/background.svg" alt="" />
             </div>
 
             <Footer/>

@@ -6,7 +6,9 @@ import { Link } from 'react-router-dom';
 export function Header() {
     return (
         <div id="Header">
-            <img src={HeaderImg} alt='HeaderImg' />
+            <img src={HeaderImg} alt='HeaderImg' 
+            className='debuting'
+            />
             <div id="HeaderOptions">
                 <Link to={'/connexion'}>Se connecter</Link>
                 <div id="separation" />

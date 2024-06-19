@@ -1,0 +1,37 @@
+.selectator{
+    position: absolute;
+    display: flex;
+    flex: row;
+    z-index: 1;
+    margin-left: 30%;
+    margin-top: 30%;
+}
+
+.buttongennen {
+    background-color: brown;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.fonduderriere {
+    position: relative;
+    display: flex;
+    flex: row;
+    z-index: 0;
+}
+
+.banditoro {
+    background-color: #F2F2F2;
+    text-align: center;
+    color: #9C352F;
+    width: 100%;
+    margin: 0%;
+    padding: 5px;
+
+    position: absolute;
+    z-index: 1;
+}
