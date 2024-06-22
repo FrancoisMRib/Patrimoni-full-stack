@@ -17,10 +17,10 @@ export function Connexion() {
             <div className="selectator">
                 
                 <button>
-                    <Link to={`/registration`}>Créer ici pour créer un compte</Link>
+                    <Link to={`/register`}>Créer ici pour créer un compte</Link>
                 </button>
                 <button>
-                    <Link to={`/login`}>Créer ici pour vous connecter</Link>
+                    <Link to={`/loginpage`}>Créer ici pour vous connecter</Link>
                 </button>
             </div>
 

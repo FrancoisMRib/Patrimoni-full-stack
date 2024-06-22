@@ -8,22 +8,24 @@ import axios from 'axios';
 
 export function Register() {
 
-    console.log("toto");
+    // console.log("toto");
 
     const [values, setValues] = useState({
         name_user: '',
+        first_name_user: '',
         email: '',
         password_user: ''
     })
 
-    axios.defaults.withCredentials = true ;
+    // axios.defaults.withCredentials = true ;
     const handleSubmit = (event) => {
         console.log(values);
         event.preventDefault();
-        axios.post('http://localhost:5173/registration', values)
+        axios.post('http://localhost:3000/register', values)
         // .then(res => console.log(res))
+        // .then(err => console.log(err));
         .then(res => console.log('Registration successful:', response.data))
-        .then(err => console.log('Registration error:', error));
+        .then(err => console.log('Registration error:', err));
     }
 
     return (
@@ -37,12 +39,19 @@ export function Register() {
             <div 
             // className="bg-white p-3 rounded w-25"
             >
-                <h2>Sign Up </h2>
+                <h2>Créez un compte</h2>
                 <form onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="name_user"><strong>Nom </strong></label>
                         <input type="text" placeholder="Entrez votre nom" name="name_user"
                         onChange={e => setValues({...values, name_user : e.target.value})} 
+                        // className="form-control rounded-0"
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="first_name_user"><strong>Prénom </strong></label>
+                        <input type="text" placeholder="Entrez votre prénom" name="name_user"
+                        onChange={e => setValues({...values, first_name_user : e.target.value})} 
                         // className="form-control rounded-0"
                         />
                     </div>
@@ -64,8 +73,8 @@ export function Register() {
                     <button type="submit" 
                     // className="btn btn-success w-100 rounded-0"
                     >S'enregistrer</button>
-                    <p>Vous êtes en accord avec nos termes et nos politiques</p>
-                    <Link to={`/login`} 
+                    <p>ou</p>
+                    <Link to={`/loginpage`} 
                     // className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none"
                     >J'ai déjà un compte</Link>
                 </form>

@@ -26,7 +26,7 @@ export function Login() {
             setErrorMessage('');
 
             // Send login request to server
-            const response = await axios.post('http://localhost:3173/login', { email, password_user });
+            const response = await axios.post('http://localhost:3000/login', { email, password_user });
 
             // If login successful, redirect to MainPage
             if (response.status === 200) {

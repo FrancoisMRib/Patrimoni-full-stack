@@ -12,6 +12,7 @@ import { Connexion } from "./pages/Connexion";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { Register } from "./Register";
+import { Registration } from "./Registration.jsx";
 import { Login } from "./Login";
 // import { Map } from './Map.jsx';
 import React from 'react';
@@ -56,8 +57,12 @@ const router = createBrowserRouter([
     element: <Apropos/>
   },
   {
-    path:"/registration",
+    path:"/register",
     element: <Register/>
+  },
+  {
+    path:"/registration",
+    element: <Registration/>
   },
   {
     path:"/login",
