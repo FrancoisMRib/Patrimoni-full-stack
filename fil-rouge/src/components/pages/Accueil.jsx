@@ -1,5 +1,6 @@
 import { Header } from "../Header";
 import { Footer } from "../Footer";
+import { Link } from "react-router-dom";
 import './Accueil.css';
 
 
@@ -25,7 +26,7 @@ export function Accueil() {
             </div>
 
             <div className="select">
-                <div className="buttongen">Cliquez ici si vous souhaitez avoir accès à un itinéraire programmé</div>
+                <div className="buttongen"><Link to="/itineraire" className="vers">Cliquez ici si vous souhaitez avoir accès à un itinéraire programmé</Link></div>
                 <div className="buttongen">Cliquez ici si vous souhaitez avoir accès à un itinéraire personnalisé</div>
             </div>
             

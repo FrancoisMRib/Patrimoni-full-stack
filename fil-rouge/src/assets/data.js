@@ -16,11 +16,11 @@ export const data = [
         ans : 3,
     },
     {
-        question : "Laquelle de ces églises n'est pas à Toulouse ?",
-        option1 : "église Saint-Nicolas",
-        option2 : "cathédrale Saint-Etienne",
-        option3 : "cathédrale Notre-Dame",
-        option4 : "basilique Saint-Sernin",
+        question : "Laquelle de ces célébrités n'est pas native de Toulouse ?",
+        option1 : "Claude Nougaro",
+        option2 : "Boby Lapointe",
+        option3 : "Georges de Caunes",
+        option4 : "Romain Ntamack",
         ans : 2,
     },
     {

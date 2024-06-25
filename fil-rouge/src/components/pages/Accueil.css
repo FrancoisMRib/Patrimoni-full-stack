@@ -50,6 +50,10 @@
     z-index: 1;
 }
 
+.vers{
+    color: #F2F2F2;
+}
+
 .footerspeci {
     position: absolute;
     z-index: 0;
