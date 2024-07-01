@@ -53,9 +53,16 @@ const db = mysql.createConnection({
 //Variante de la 2e version
 app.post('/loginpage', (req, res) => {
     const { name_user, password_user } = req.body;
-      
-    const sql = 'SELECT * FROM Users WHERE name_user = ? AND password_user = ?';
+    // Hashage du password avant usage dans la requête
+    // const passwordHash = bcrypt.hashSync(password_user, 10); // Replace 10 with your desired cost factor
+    //Mais on l'utilise pas parce que ça fait planter l'authentification
+    //const sql = 'SELECT * FROM Users WHERE name_user = ? AND password_user = ?';
+    //Version de la ligne précédente qui évite de faire appel à *
+    const sql = 'SELECT users.name_user, users.password_user FROM Users WHERE name_user = ? AND password_user = ?';
     db.query(sql, [name_user, password_user], (err, result) => {
+    //Variante avec le mot de passe hashé, mais on la prend pas parce que ça fait planter ; le mot de passe
+    //n'est pas hashé dans la BDD
+    //db.query(sql, [name_user, passwordHash], (err, result) => {
 // Fin de la variante
     if (err) {
       res.status(500).json({ message: 'An error occurred while processing your request.' });
